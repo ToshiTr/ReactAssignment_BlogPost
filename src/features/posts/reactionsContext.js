@@ -35,6 +35,7 @@ export function ReactionsProvider({ children }) {
     switch (action.type) {
 
       case "thumbsUp":
+        postReaction[action.type] +=1
 
       return {
         ...state,
