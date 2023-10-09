@@ -2,7 +2,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 import { sub } from "date-fns";
 
 //Initially setting reactions to 0
-//2 static posts gaving title, category and content
+//2 static posts having title, category and content and reactions
 const initialState = [
     {
         id: '1',
@@ -31,8 +31,7 @@ const initialState = [
 ]
 
 
- // reducer function for handling actions
-
+ // reducer function for handling different actions
 const postsSlice = createSlice({
     name: 'posts',
     initialState,
